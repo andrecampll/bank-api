@@ -3,8 +3,8 @@ use Mix.Config
 # Configure your database
 config :bank_api, BankApi.Repo,
   username: "postgres",
-  password: "postgres",
-  database: "bank_api_dev",
+  password: "docker",
+  database: "bank-api",
   hostname: "localhost",
   show_sensitive_data_on_connection_error: true,
   pool_size: 10
