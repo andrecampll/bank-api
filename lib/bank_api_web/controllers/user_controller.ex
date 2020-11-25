@@ -1,8 +1,7 @@
 defmodule BankApiWeb.UserController do
   use BankApiWeb, :controller
 
-  def create(conn, params) do
-    IO.inspect conn
-    IO.inspect params
+  def create(conn, %{"user" => user}) do
+    render(conn, "user.json", %{ user: user })
   end
 end
